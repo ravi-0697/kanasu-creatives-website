@@ -19,7 +19,8 @@ const portfolio = [
   { title: 'Together, Always', category: 'Pre-Wedding', image: 'https://images.unsplash.com/photo-1529636798458-92182e662485?auto=format&fit=crop&w=900&q=85', shape: 'portrait' },
 ]
 const visiblePortfolio = computed(() => activeFilter.value === 'All' ? portfolio : portfolio.filter(item => item.category === activeFilter.value))
-const whatsappUrl = 'https://wa.me/917411544639?text=' + encodeURIComponent('Hello Kanasu Creatives! I would like to enquire about your photography packages.')
+const whatsappUrl = 'https://wa.me/918073301126?text=' + encodeURIComponent('Hello Kanasu Creatives! I would like to enquire about your photography packages.')
+const instagramUrl = 'https://www.instagram.com/kanasu_creatives_2026/'
 </script>
 
 <template>
@@ -28,12 +29,15 @@ const whatsappUrl = 'https://wa.me/917411544639?text=' + encodeURIComponent('Hel
       <header class="site-header wrap">
         <a class="brand" href="#home" aria-label="Kanasu Creatives home" @click="menuOpen = false">
           <span class="brand-mark">◎</span>
-          <span class="brand-copy"><strong>KANASU</strong><small>CREATIVES</small><em>PHOTOGRAPHY & VIDEOGRAPHY</em></span>
+          <span class="brand-copy"><strong>KANASU</strong><small>CREATIVES</small><em>PHOTOGRAPHY & VIDEOGRAPHY</em><span class="brand-founders">
+          By Avinash · Pavan Kumar L · Ravi G
+        </span></span>
         </a>
         <button class="menu-toggle" aria-label="Toggle navigation" :aria-expanded="menuOpen" @click="menuOpen = !menuOpen">☰</button>
         <nav :class="['nav-links', { 'nav-open': menuOpen }]">
           <a href="#home" @click="menuOpen = false">Home</a>
           <a href="#about" @click="menuOpen = false">About</a>
+          <!-- <a href="#team" @click="menuOpen = false">Our Team</a> -->
           <a href="#services" @click="menuOpen = false">Services</a>
           <a href="#portfolio" @click="menuOpen = false">Portfolio</a>
           <a href="#contact" @click="menuOpen = false">Contact</a>
@@ -69,6 +73,41 @@ const whatsappUrl = 'https://wa.me/917411544639?text=' + encodeURIComponent('Hel
         </div>
       </div>
     </section>
+
+    
+<!-- <section id="team" class="team-section section-light">
+  <div class="wrap">
+    <div class="center-heading">
+      <p class="eyebrow eyebrow-muted">THE PEOPLE BEHIND THE LENS</p>
+      <h2>Meet our <i>team</i></h2>
+      <p class="team-intro">
+        Three creative minds, one shared passion —
+        capturing your moments beautifully.
+      </p>
+    </div>
+
+    <div class="team-grid">
+      <article class="team-card">
+        <div class="team-avatar">R</div>
+        <h3>Ravi G</h3>
+        <p>Photography & Creative Direction</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-avatar">A</div>
+        <h3>Avinash</h3>
+        <p>Photography & Videography</p>
+      </article>
+
+      <article class="team-card">
+        <div class="team-avatar">P</div>
+        <h3>Pavan Kumar</h3>
+        <p>Cinematic Films & Visual Stories</p>
+      </article>
+    </div>
+  </div>
+</section> -->
+
 
     <section id="services" class="services section-light">
       <div class="wrap">
@@ -126,8 +165,79 @@ const whatsappUrl = 'https://wa.me/917411544639?text=' + encodeURIComponent('Hel
         </div>
         <div class="contact-card">
           <p class="contact-label">START A CONVERSATION</p>
-          <a class="contact-line" href="mailto:info@kanasucreatives.com"><span>✉</span> info@kanasucreatives.com</a>
-          <a class="contact-line" :href="whatsappUrl" target="_blank" rel="noreferrer"><span>◉</span> WhatsApp our team</a>
+        
+        
+<a
+  class="contact-line social-contact email-contact"
+  href="mailto:info@kanasucreatives.com"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <rect
+      x="3" y="5" width="18" height="14" rx="2"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.7"
+    />
+    <path
+      d="m4 7 8 6 8-6"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.7"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+  <span>info@kanasucreatives.com</span>
+  <span class="social-arrow">↗</span>
+</a>
+
+          
+          
+<a
+  class="contact-line social-contact whatsapp-contact"
+  :href="whatsappUrl"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.4-5a8.4 8.4 0 1 1 16.1-3.7Z"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.7"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M8.5 7.8c.3-.4.6-.4.9-.1l1.1 1.6c.2.3.1.5-.2.8l-.6.6c.5 1.1 1.4 2 2.6 2.6l.6-.7c.2-.3.5-.3.8-.1l1.6 1.1c.3.2.3.6.1.9-.4.7-1.1 1-1.8.9-2.8-.5-5.5-3.2-6-6-.1-.6.2-1.2.9-1.6Z"
+      fill="currentColor"
+    />
+  </svg>
+  <span>WhatsApp our team</span>
+  <span class="social-arrow">↗</span>
+</a>
+
+<a
+  class="contact-line social-contact instagram-contact"
+  :href="instagramUrl"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <rect
+      x="3.2" y="3.2" width="17.6" height="17.6" rx="5"
+      fill="none" stroke="currentColor" stroke-width="1.8"
+    />
+    <circle
+      cx="12" cy="12" r="4"
+      fill="none" stroke="currentColor" stroke-width="1.8"
+    />
+    <circle cx="17.6" cy="6.7" r="1.1" fill="currentColor" />
+  </svg>
+  <span>Follow us on Instagram</span>
+  <span class="social-arrow">↗</span>
+</a>
+
+
           <div class="contact-divider"></div>
           <p class="contact-label">SERVING</p>
           <p class="contact-location">Bengaluru & across Karnataka</p>
@@ -137,12 +247,42 @@ const whatsappUrl = 'https://wa.me/917411544639?text=' + encodeURIComponent('Hel
       </div>
     </section>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="wrap footer-inner">
-        <a class="brand footer-brand" href="#home"><span class="brand-mark">◎</span><span class="brand-copy"><strong>KANASU</strong><small>CREATIVES</small><em>PHOTOGRAPHY & VIDEOGRAPHY</em></span></a>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark">◎</span><span class="brand-copy"><strong>KANASU</strong><small>CREATIVES</small><em>PHOTOGRAPHY & VIDEOGRAPHY</em><span class="brand-founders">By Avinash. · Pavan Kumar · Ravi G</span></span></a>
         <p>Dream it. Capture it.</p>
         <span class="copyright">© {{ new Date().getFullYear() }} Kanasu Creatives</span>
       </div>
-    </footer>
+    </footer> -->
+    
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">◎</span>
+      <span class="brand-copy">
+        <strong>KANASU</strong>
+        <small>CREATIVES</small>
+        <em>PHOTOGRAPHY & VIDEOGRAPHY</em>
+        <span class="brand-founders">
+          By Avinash · Pavan Kumar L · Ravi G
+        </span>
+      </span>
+    </a>
+
+    <div class="footer-middle">
+      <p> Dream it. Capture it.</p>
+      <p class="website-credit">
+        Website designed &amp; developed by
+        <strong>RAVI G</strong>
+        <span>9620607130</span>
+      </p>
+    </div>
+
+    <span class="copyright">
+      © {{ new Date().getFullYear() }} Kanasu Creatives
+    </span>
+  </div>
+</footer>
+
   </main>
 </template>
