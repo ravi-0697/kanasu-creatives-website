@@ -236,3 +236,37 @@
   }
 }
 
+.designer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 3px;
+}
+
+.designer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #d9ad61;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.designer-social svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.designer-social:hover {
+  color: #ffffff;
+}
+
+.website-credit {
+  margin-bottom: 0;
+}
+
+

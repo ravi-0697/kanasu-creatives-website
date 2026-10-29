@@ -242,7 +242,7 @@ const instagramUrl = 'https://www.instagram.com/kanasu_creatives_2026/'
           <p class="contact-label">SERVING</p>
           <p class="contact-location">Bengaluru & across Karnataka</p>
           <a class="button button-gold contact-button" :href="whatsappUrl" target="_blank" rel="noreferrer">Enquire on WhatsApp <span>↗</span></a>
-          <p class="small-note">Update the contact number and service area to match your business before launch.</p>
+          <!-- <p class="small-note">Update the contact number and service area to match your business before launch.</p> -->
         </div>
       </div>
     </section>
@@ -269,14 +269,83 @@ const instagramUrl = 'https://www.instagram.com/kanasu_creatives_2026/'
       </span>
     </a>
 
-    <div class="footer-middle">
+    <!-- <div class="footer-middle">
       <p> Dream it. Capture it.</p>
       <p class="website-credit">
         Website designed &amp; developed by
         <strong>RAVI G</strong>
         <span>9620607130</span>
       </p>
-    </div>
+    </div> -->
+
+    
+<div class="footer-middle">
+  <p class="footer-tagline">Dream it. Capture it.</p>
+
+  <p class="website-credit">
+    Website designed &amp; developed by
+    <strong>RAVI G</strong>
+  </p>
+
+  <div class="designer-contact">
+    <a
+      href="https://wa.me/919620607130"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="designer-social"
+      aria-label="Contact Ravi on WhatsApp"
+      title="Chat with Ravi on WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.4-4.7A8.5 8.5 0 1 1 20.5 11.8Z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M8.5 7.8c.3-.5.6-.5.9-.5h.4c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.7.8c-.2.2-.2.4 0 .6.5.9 1.3 1.7 2.2 2.2.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.7-.1l1.7.8c.3.1.4.3.4.5 0 .3-.1 1.2-.7 1.7-.5.5-1.2.7-1.9.6-1.1-.2-2.5-.8-3.9-2-1.6-1.4-2.5-3.1-2.7-4.1-.2-.9.2-1.7.7-2.2Z"
+          fill="currentColor"
+        />
+      </svg>
+      <span>9620607130</span>
+    </a>
+
+    <a
+      href="https://www.instagram.com/googly_ravi_/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="designer-social"
+      aria-label="Visit Ravi on Instagram"
+      title="Visit Instagram profile"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect
+          x="3"
+          y="3"
+          width="18"
+          height="18"
+          rx="5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        />
+        <circle cx="17.5" cy="6.8" r="1.1" fill="currentColor" />
+      </svg>
+      <span>Instagram</span>
+    </a>
+  </div>
+</div>
+
 
     <span class="copyright">
       © {{ new Date().getFullYear() }} Kanasu Creatives
